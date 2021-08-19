@@ -17,7 +17,7 @@ class Producto(models.Model):
     id_producto = models.AutoField(primary_key=True)
     nombre = models.CharField(max_length=255)
     descripcion = models.CharField(max_length=255)
-    precio = models.DecimalField(max_digits=5, decimal_places=2)
+    precio = models.DecimalField(max_digits=7, decimal_places=2)
     stock = models.IntegerField()
     #imagen = models.ImageField(upload_to='productos')
 
